@@ -6,8 +6,8 @@ ioClient.on("seq-num", (msg) => {
   console.info(msg);
 });
 
-ioCliente.on('on', (msg) => {
-  console.log(msg);
+ioClient.on('on', (msg) => {
+  console.info(msg);
 });
 
 Board.requestPort((err, port) => {

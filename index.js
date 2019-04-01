@@ -34,9 +34,9 @@ http.listen(port, function () {
 });
 
 // sends each client its current sequence number
-setInterval(() => {
-  for (const [client, sequenceNumber] of sequenceNumberByClient.entries()) {
-    client.emit("seq-num", sequenceNumber);
-    sequenceNumberByClient.set(client, sequenceNumber + 1);
-  }
-}, 1000);
+// setInterval(() => {
+//   for (const [client, sequenceNumber] of sequenceNumberByClient.entries()) {
+//     client.emit("seq-num", sequenceNumber);
+//     sequenceNumberByClient.set(client, sequenceNumber + 1);
+//   }
+// }, 1000);
