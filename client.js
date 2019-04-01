@@ -6,6 +6,10 @@ ioClient.on("seq-num", (msg) => {
   console.info(msg);
 });
 
+ioCliente.on('on', (msg) => {
+  console.log(msg);
+});
+
 Board.requestPort((err, port) => {
   if (err) {
     console.log('error');
