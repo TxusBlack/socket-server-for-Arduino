@@ -24,18 +24,5 @@ Board.requestPort((err, port) => {
       console.info(msg);
       board.digitalWrite(13, board.LOW);
     });
-
-
-    // let led = true;
-    // setInterval(() => {
-    //   if (!led) {
-    //     console.log('ON');
-    //     board.digitalWrite(13, board.HIGH);
-    //   } else {
-    //     console.log('OFF');
-    //     board.digitalWrite(13, board.LOW);
-    //   }
-    //   led = !led;
-    // }, 1000)
   });
 });
