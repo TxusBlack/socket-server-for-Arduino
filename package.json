@@ -1,0 +1,36 @@
+{
+  "name": "socket-server",
+  "version": "1.0.0",
+  "description": "It's a socket server build with socket.io for make IoT with Intel Galileo and Google Home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TxusBlack/socket-server-for-Intel-Galileo.git"
+  },
+  "keywords": [
+    "socket",
+    "iot",
+    "intel",
+    "galileo",
+    "arduino",
+    "google",
+    "home",
+    "turn",
+    "on",
+    "the",
+    "light",
+    "turn",
+    "off",
+    "the",
+    "light"
+  ],
+  "author": "Diego Moreno <iam@diegomoreno.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo/issues"
+  },
+  "homepage": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo#readme"
+}
