@@ -8,6 +8,16 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/on', (req, res) => {
+  console.log(req);
+  res.send('Encender');
+});
+
+app.get('/off', (req, res) => {
+  console.log(req);
+  res.send('Apagar');
+});
+
 io.on('connection', function (socket) {
   console.info(`Client connected [id=${socket.id}]`);
   // initialize this client's sequence number

@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "client": "MODE=dev node client.js",
-    "dev": "MODE=dev node index.js"
+    "dev": "MODE=dev node index.js",
+    "client": "node client.js",
+    "firmata": "firmata-party uno --debug"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,8 @@
   "homepage": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "firmata": "^2.0.0",
+    "firmata-party": "^1.5.10",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0"
   }
