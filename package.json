@@ -4,7 +4,10 @@
   "description": "It's a socket server build with socket.io for make IoT with Intel Galileo and Google Home",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "client": "node client.js",
+    "dev": "MODE=dev node index.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +38,7 @@
   "homepage": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo#readme",
   "dependencies": {
     "express": "^4.15.2",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
   }
 }
