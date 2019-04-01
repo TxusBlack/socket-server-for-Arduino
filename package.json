@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo/issues"
   },
-  "homepage": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo#readme"
+  "homepage": "https://github.com/TxusBlack/socket-server-for-Intel-Galileo#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
