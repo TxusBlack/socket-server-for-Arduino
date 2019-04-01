@@ -1,7 +1,8 @@
 var app = require('express')();
 var http = require('http').Server(app);
 const io = require('socket.io')(http);
-const port = process.env.MODE ? 3000 : 80 || 80
+const port = process.env.MODE ? 3000 : 80;
+let sequenceNumberByClient = new Map();
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
