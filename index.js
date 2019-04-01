@@ -1,7 +1,7 @@
 var app = require('express')();
 var http = require('http').Server(app);
 const io = require('socket.io')(http);
-const port = process.env.MODE ? 3000 : 80;
+const port = process.env.MODE == 'dev' ? 80 : 3000;
 let sequenceNumberByClient = new Map();
 
 app.get('/', function (req, res) {
