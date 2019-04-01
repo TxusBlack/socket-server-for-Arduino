@@ -9,13 +9,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/on', (req, res) => {
-  console.log(req);
   res.send('Encender');
-  socket.emit('on', 'HIGH');
+  io.emit('on', 'HIGH');
 });
 
 app.get('/off', (req, res) => {
-  console.log(req);
   res.send('Apagar');
 });
 
