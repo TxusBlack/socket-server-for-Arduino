@@ -15,6 +15,7 @@ app.get('/on', (req, res) => {
 
 app.get('/off', (req, res) => {
   res.send('Apagar');
+  io.emit('off', 'LOW');
 });
 
 io.on('connection', function (socket) {
